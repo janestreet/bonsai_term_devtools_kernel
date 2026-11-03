@@ -1,0 +1,9 @@
+(library
+ (name bonsai_term_devtools_kernel)
+ (public_name bonsai_term_devtools_kernel)
+ (libraries async bonsai bonsai.driver bonsai_term
+   bonsai_term_components.color_scheme bonsai_term_devtools_diagnose
+   bonsai_term_components.scroller bonsai_term_components.shortcut
+   bonsai_term_components.tile_layout core core_unix notty_async)
+ (preprocess
+  (pps ppx_jane bonsai.ppx_bonsai)))

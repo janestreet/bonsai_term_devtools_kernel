@@ -1,0 +1,7 @@
+(library
+ (name bonsai_term_devtools_diagnose)
+ (public_name bonsai_term_devtools_kernel.diagnose)
+ (libraries bonsai_term bonsai_term_components.color_scheme
+   bonsai_term_components.tile_layout core)
+ (preprocess
+  (pps ppx_jane bonsai.ppx_bonsai)))
